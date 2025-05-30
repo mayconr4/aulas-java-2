@@ -22,6 +22,36 @@ public class Calculo {
         this.valor_01 = valor_01;
     }
 
+    public void  somar (double a, double b){
+        this.valor_01 = a;
+        this.valor_02 = b;
 
+        this.total = valor_01+valor_02;
+        System.out.println("Toatal; "+total);
+    }
+
+    public void  subtracao (double a, double b){
+        this.valor_01 = a;
+        this.valor_02 = b;
+
+        this.total = valor_01-valor_02;
+        System.out.println("Toatal; "+total);
+    }
+
+    public void  multiplica (double a, double b){
+        this.valor_01 = a;
+        this.valor_02 = b;
+
+        this.total = valor_01*valor_02;
+        System.out.println("Toatal; "+total);
+    }
+
+    public void  divisao (double a, double b){
+        this.valor_01 = a;
+        this.valor_02 = b;
+
+        this.total = valor_01/valor_02;
+        System.out.println("Toatal; "+total);
+    }
 
 }
