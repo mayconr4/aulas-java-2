@@ -30,7 +30,7 @@ public class ControllerCalculadora {
         Scanner ler = new Scanner(System.in);
 
         switch(a){
-            case "raiz":
+            case "r":
 
             System.out.println("Digite um numero");
             calculo.setValor_01(ler.nextDouble());
@@ -38,7 +38,17 @@ public class ControllerCalculadora {
               calculo.raizQuadrada(calculo.getValor_01());
 
             break;
+            case("e"):
 
+                System.out.println("Digite um numero");
+                calculo.setValor_01(ler.nextDouble());
+
+                System.out.println("Digite um numero");
+                calculo.setValor_02(ler.nextDouble());
+
+                calculo.exponenciacao(calculo.getValor_01(), calculo.getValor_02());
+
+                break;
             default:
                 throw new IllegalArgumentException("Unexpected values"+a);
         }
