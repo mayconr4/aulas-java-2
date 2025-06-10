@@ -15,7 +15,7 @@ public class Servicos extends ContaBancaria{
             System.out.println("Valor acima do permiido para empréstimo: ");
             b=0;
         }
-        return b;
+        return total;
 
     }
 

@@ -40,18 +40,20 @@ public class ContaBancaria {
         this.deposito = deposito;
     }
 
-    public void sacar(double a ){
+    public double sacar(double a ){
         if(a<=this.saldo){
         this.saldo = this.saldo-a;
         } else {
             System.out.println("Saldo insufisciente: ");
         }
+        return this.saldo;
     }
 
-    public void depositar(double a ){
+    public double depositar(double a ){
 
         this.saldo = this.saldo+a;
         System.out.println("Saldo atual: "+this.saldo);
+        return this.saldo=a;
     }
 
     public void exibirSaldo(){
